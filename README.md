@@ -1,5 +1,15 @@
 # gemma-2b-ar
 ## Arabic Writing Assistant Model
+## Table of Contents:
+- [Overview](#overview) <br>
+- [Features](features) <br>
+- [Requirements](requirements)<br>
+- [Installation](installation) <br>
+- [Technical details](technical-details) <br>
+- [Contributing](contributing) <br>
+- [License](license) <br>
+- [Acknowledgemnt](acknowledgement) <br>
+
 ### Overview
 This project provides a writing assistant model fine-tuned on the Gemma-2B dataset, which consists of a diverse range of Arabic articles. The model is designed to assist users in generating, editing, and enhancing Arabic text through an intuitive chat-based user interface (UI).
 
@@ -31,7 +41,7 @@ Copy code
 pip install -r requirements.txt
 ```
 
-### Usage
+#### Usage
 Start the chat server:
 ```
 first try.py
@@ -43,8 +53,10 @@ Interact with the writing assistant through the chat interface.
 
 Example Interaction
 User: "اكتب مقال عن الرياضة " Assistant: "رياضة هو ما يجعل الإنسان قويا ً ومرتاحا ً ومستعدا ً للعمل . الرياضة هي أيضا ً مصدر إلهامة وتفكير جديد ، فهي تساعد على تطوير العقل والقدرة على حل المشكلات . كما أنها تمنحنا الثقة بالنفس والتميز في العمل.يلرياضة هي جزء من حياتنا اليومية ، فهي تساعد على التخلص من الضغوط والتوتر . كما أنها تمنحنا الطاقة والمعرفة التي نحتاجها في الحياة "
-
-Contributing
+### Technical Details
+- Model Architecture: this is a finetuned model using QLoRa technique to shorten the amount of time needed and based on Gemma2-2b which can be easy to load it on local cpu and use it as a loca ai assistant.
+- Data Source: The Arabic Pile is a comprehensive dataset meticulously designed to parallel the structure of The Pile and The Nordic Pile. Focused on the Arabic language, the dataset encompasses a vast array of linguistic nuances, incorporating both Modern Standard Arabic (MSA) and various Levantine, North African, and Egyptian dialects. Tailored for the training and fine-tuning of large language models, the dataset consists of 13 subsets, each uniquely crafted to cater to different linguistic domains.(https://huggingface.co/datasets/premio-ai/TheArabicPile_Articles)
+### Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
 Fork the repository.
